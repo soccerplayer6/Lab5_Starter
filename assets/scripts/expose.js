@@ -25,7 +25,7 @@ function init() {
       if (selectedValue === "party-horn")
       {
         hornImage.src = "assets/images/party-horn.svg";
-        audioSelect.src = "assets/audio/car-horn.mp3";
+        audioSelect.src = "assets/audio/party-horn.mp3";
       }
     });
 
@@ -55,7 +55,7 @@ function init() {
       }
     });
 
-    //let jsConfetti = new JSConfetti();
+    const jsConfetti = new JSConfetti();
 
     let buttons = document.getElementsByTagName("button");
     let button = buttons[0];
@@ -64,7 +64,7 @@ function init() {
         audioSelect.play();
         if (selectedValue === "party-horn")
         {
-            //jsConfetti.addConfetti();
+            jsConfetti.addConfetti();
             console.log("testtest");
         }
     });
